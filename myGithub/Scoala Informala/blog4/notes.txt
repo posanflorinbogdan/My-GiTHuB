@@ -1,0 +1,13 @@
+Contact page - no redirect needed
+Articles - encoding text
+Register with simple user shoul take me to article to add 
+Article for simpl,e user - do not show errors
+Profile - fill with db infos
+Articles after add - sort desc
+No comments
+
+JS ERRORS
+
+do not display erros
+if logged do not shou login page
+

@@ -1,0 +1,81 @@
+body {
+  margin:0;
+  padding: 0;
+  background-color:#282742 ;
+  
+}
+#Holder {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 57px;
+}
+
+#Navbar {
+  border: 1px solid #666;
+  border-radius: 5px;
+  background: #272D42;
+  margin: 0 auto;
+  padding: 2px;
+  width: 980;
+  box-shadow: 0 4px 8px #91A8d0;
+}
+  #Navbar ul {
+    list-style: none;
+  }
+
+    #Navbar ul li {
+      float: left;
+      list-style-type: none;
+      display: block;
+      width: 100px;
+      height: auto;
+      text-align: center;
+      line-height: 55px;
+      font-size:15px;
+      
+    }
+
+#Content {
+  margin-top: 57px;
+  margin-bottom: 2px;
+  background: #DBD0D0;
+  border: 1px solid #666;
+  border-radius: 5px;
+  box-shadow: inset 0 0px 10px 0 #91A8d0;
+  padding: 2px;
+  width: auto;
+  height: 800px;
+}  
+
+#ContentA {
+  margin-top: 57px;
+  margin-bottom: 2px;
+  background: #DBD0D0;
+  border: 1px solid #666;
+  border-radius: 5px;
+  box-shadow: inset 0 0px 10px 0 #91A8d0;
+  padding: 2px;
+  width: auto;
+  height: auto;
+  
+}
+.articlenews {
+  height:700px;
+}
+.newsarticle {
+  height:350px;
+}
+
+#Footer {
+  border: 1px solid #666;
+  border-radius: 5px;
+  background: #272D42;
+  margin: 0 auto;
+  padding: 2px;
+  width: auto;
+  height: 30px;
+  box-shadow: 0 -2px 8px #91A8d0;
+}
+
