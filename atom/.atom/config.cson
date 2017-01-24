@@ -1,0 +1,30 @@
+"*":
+  core:
+    disabledPackages: [
+      "atom-terminal-panel"
+    ]
+    packagesWithKeymapsDisabled: []
+    telemetryConsent: "limited"
+    themes: [
+      "dracula-ui"
+      "dracula-theme"
+    ]
+  editor:
+    fontSize: 15
+    scrollPastEnd: true
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "470489b2-3c90-6f83-ede0-4101ee52a91b"
+  "highlight-selected": {}
+  minimap:
+    plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  pigments:
+    markerType: "dot"
+  welcome:
+    showOnStartup: false

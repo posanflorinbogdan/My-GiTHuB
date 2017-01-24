@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Form Sequence</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </head>
+  <body>
+
+
+    <div id="container">
+      <ul id="status" class="clearfix">
+        <li id="step1" class="selected">Account</li>
+        <li id="step2">Details</li>
+        <li id="step3">Confirm</li>
+      </ul>
+
+
+      <div class="form-container" id="form-step-1">
+        <form id="account-creation" action="" name="account-creation" autocomplete="off">
+          <fieldset>
+            <legend>Step 1</legend>
+            <span class="step">Create your account</span>
+
+            <label for="fullname">Name</label>
+            <input type="text" name="fullname" id="fullname" class="full-txt" placeholder="Name *">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="full-txt" placeholder="Email Address *">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="full-txt" placeholder="Password *">
+          </fieldset>
+
+          <input type="submit" id="step1-next" class="btn" value="Next Step">
+        </form>
+      </div>
+
+      <div class="form-container" id="form-step-2" style="display:none;">
+        <form id="account-creation-details" action="" name="account-creation2" autocomplete="off">
+          <fieldset>
+            <legend>Step 2</legend>
+            <span class="step">Account Details</span>
+
+
+            <div class="row">
+              <div class="medium-8 columns lp">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" class="full-txt" placeholder="City">
+              </div>
+              <div class="medium-4 columns rp">
+                <label for="zip">Zip</label>
+                <input type="text" name="zip" id="zip" class="full-txt" placeholder="Zip">
+              </div>
+            </div>
+
+            <label for="country">Country</label>
+            <select class="full-txt" name="country">
+              <option value="AF">Afghanistan</option>
+              <option value="AX">Åland Islands</option>
+              <option value="AL">Albania</option>
+              <option value="DZ">Algeria</option>
+              <option value="AS">American Samoa</option>
+              <option value="AD">Andorra</option>
+              <option value="AO">Angola</option>
+              <option value="AI">Anguilla</option>
+              <option value="AQ">Antarctica</option>
+              <option value="AG">Antigua and Barbuda</option>
+              <option value="AR">Argentina</option>
+              <option value="AM">Armenia</option>
+              <option value="AW">Aruba</option>
+              <option value="AU">Australia</option>
+              <option value="AT">Austria</option>
+              <option value="AZ">Azerbaijan</option>
+              <option value="BS">Bahamas</option>
+              <option value="BH">Bahrain</option>
+              <option value="BD">Bangladesh</option>
+            </select>
+
+            <input type="checkbox" name="profile" id="profile" value="1" />
+            <label for="profile" class="checklabel"><span></span>Make my profile public</label><br>
+
+            <input type="checkbox" name="emailReports" id="emailReports" value="1" />
+            <label for="emailReports" class="checklabel"><span></span>Send me daily email reports</label>
+
+          </fieldset>
+
+          <input type="submit" id="step2-next" class="btn" value="Final Step">
+          <a href="#" id="prev-step1">Previous Step</a>
+        </form>
+      </div>
+
+      <div class="form-container" id="form-step-3" style="display:none;">
+        <form id="account-creation-confirm" action="" name="account-creation3" autocomplete="off">
+          <fieldset>
+            <legend>Step 3</legend>
+            <span class="step">Terms of Service</span>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+
+            <input type="checkbox" name="accept" id="accept" value="1" />
+            <label for="accept" class="checklabel"><span></span>I accept these terms</label>
+
+          </fieldset>
+
+          <input type="submit" id="step3-next" class="btn" value="Finish up">
+        </form>
+      </div>
+
+
+    </div>
+
+
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+  </body>
+</html>

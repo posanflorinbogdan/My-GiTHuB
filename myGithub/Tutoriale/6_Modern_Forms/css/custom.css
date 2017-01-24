@@ -1,0 +1,250 @@
+.clearfix {
+	display:block;
+	clear:both;
+}
+
+
+* {
+	font-family: 'Source Sans Pro';
+}
+
+body {
+	background:url(../images/bg.png);
+}
+
+#container {
+	width:500px;
+	margin: 130px auto 0 auto;
+	display:block;
+	position:relative;
+}
+
+ul {
+	list-style-type:none;
+}
+
+ul li {
+	display:inline;
+	float:left;
+	color:#fff;
+	width:33%;
+	font-size:1.1em;
+	text-align:center;
+}
+
+ul li:before {
+	text-align:center;
+	border: 3px solid #fff;
+	height:40px;
+	-moz-border-radius:75px;
+	-webkit-border-radius:75px;
+	border-radius:75px;
+	width:40px;
+	display:block;
+	margin: 5px auto;
+	font-size:1.2em;
+}
+
+#step1:before { content: "1"; }
+#step2:before { content: "2"; }
+#step3:before { content: "3"; }
+
+.selected:before {
+	background:#fff;
+	color:#27333d;
+}
+
+.form-container {
+	background:#fff;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	padding:37px;
+	position:absolute;
+	width:500px;
+}
+
+fieldset {
+	border:none;
+	margin:0;padding:0;
+}
+
+legend {
+	text-align:center;
+	text-transform:uppercase;
+	color:gray;
+}
+
+label {
+	display:none; 
+}
+
+span.step {
+	text-align:center;
+	font-size:1.6em;
+	font-weight:600;
+	display:block;
+	margin: -5px 0 25px 0;
+}
+
+.full-txt {
+	width:100%;
+	padding:13px;
+	font-size:1.1em;
+	margin-bottom:20px;
+}
+
+input:focus {
+	border: 3px solid #26d293;
+}
+
+.btn {
+	width:100%;
+	background:#26d293 url(../images/next-arrow.png) no-repeat 29% center;
+	color:#fff;
+	font-size:1.8em;
+	border:none;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	padding:15px;
+	margin-top:30px;
+}
+
+.btn:hover {
+	cursor:pointer;
+	background:#22ba83 url(../images/next-arrow.png) no-repeat 29% center;
+}
+
+.lp { padding-left: 0 !important; }
+.rp { padding-right: 0 !important; }
+
+.checklabel {
+	font-size:1.2em;
+	display: block !important;
+}
+
+input[type="checkbox"] {
+	display:none;
+}
+
+input[type="checkbox"] + label span {
+	display:inline-block;
+	width:25px;
+	height:25px;
+	margin-right:8px;
+	vertical-align:middle;
+	background:url(../images/check_sprite.png) left top no-repeat;
+	cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+	background:url(../images/check_sprite.png) -25px top no-repeat;
+}
+
+
+.animate-out {
+	animation-name: aOut;
+	animation-duration: .7s;
+	animation-fill-mode: forwards;
+	-webkit-animation-name: aOut;
+	-webkit-animation-duration: .7s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes aOut {
+	0% {
+		opacity: 100;
+		transform: perspective(0px) translate3d(0,0,0) scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: perspective(400px) translate3d(0,300px,0) scale(.5);
+	}
+}
+@-webkit-keyframes aOut {
+	0% {
+		opacity: 100;
+		-webkit-transform: perspective(0px) translate3d(0,0,0) scale(1);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: perspective(400px) translate3d(0,300px,0) scale(.5);
+	}
+}
+
+
+.animate-in {
+	animation-name: aIn;
+	animation-duration: .7s;
+	animation-fill-mode: forwards;
+	-webkit-animation-name: aIn;
+	-webkit-animation-duration: .7s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes aIn {
+	0% {
+		opacity: 0;
+		transform: perspective(0px) translate3d(0,300px,0) scale(.5);
+	}
+	100% {
+		opacity: 100;
+		transform: perspective(400px) translate3d(0,0,0) scale(1);
+	}
+}
+@-webkit-keyframes aIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: perspective(0px) translate3d(0,300px,0) scale(.5);
+	}
+	100% {
+		opacity: 100;
+		-webkit-transform: perspective(400px) translate3d(0,0,0) scale(1);
+	}
+}
+
+label.invalid {
+	background:#fff3c9 url(../images/alert.png) no-repeat 10px 10px;
+	text-indent:35px;
+	padding:10px;
+	width:100%;
+	display:block;
+	font-size:1.1em;
+	margin-bottom:15px;
+}
+
+
+@media only screen and (max-width: 40.063em) {
+
+	#container {
+		width:90%;
+		margin-top:40px;
+	}
+
+	.form-container {
+		padding:10px;
+		width:100%;
+	}
+
+	.btn {
+		background:#26d293;
+		font-size:1.4em;
+		padding:8px;
+	}
+
+	.btn:hover {
+		background:#22ba83;
+	}
+
+	.full-txt {
+		padding:8px;
+	}
+
+	.rp {
+		padding-left:0;
+	}
+
+	.lp {
+		padding-right:0 !important;
+	}
+
+}
